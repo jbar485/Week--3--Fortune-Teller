@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/styles.css">
+
+  <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+
+  <script src="js/scripts.js" charset="utf-8"></script>
+  <title>Fortune Teller Quiz</title>
+</head>
+<body>
+  <div class="container">
+
+    <div class="jumbotron">
+      <h1>Fortune Misfortune</h1>
+      <p>Welcome to the first day of your last day</p>
+    </div>
+    <form>
+      <div class="card">
+        <div class="form-group">
+          <p class="head">unlucky events that have occured to you in the last month:</p>
+          <input type="checkbox" name="question1" value="toe"> Stubbed your toe.<br>
+          <input type="checkbox" name="question1" value="cat">Seen a black cat.<br>
+          <input type="checkbox" name="question1" value="ladder">Walking under a ladder.<br>
+          <input type="checkbox" name="question1" value="mirror">Break a mirrior.<br>
+        </div>
+        <div class="form-group">
+          <p class="head">Lucky events in recent past:</p>
+          <input type="checkbox" name="question2" value="money">Found money that was unattended.<br>
+          <input type="checkbox" name="question2" value="clover">Four leaf clover.<br>
+          <input type="checkbox" name="question2" value="lottery">Won the lottery.<br>
+          <input type="checkbox" name="question2" value="horse">Picked a winning horse.<br>
+        </div>
+        <div class="form-group">
+          <p class="head">Recent Dreams:</p>
+          <input type="checkbox" name="question3" value="rideshare"> You died.<br>
+          <input type="checkbox" name="question3" value="skateboard">Your favorite team qon a big game.<br>
+          <input type="checkbox" name="question3" value="rollerblade">You didnt dream.<br>
+          <input type="checkbox" name="question3" value="scooter">Your crush falls in love with you.<br>
+          <input type="checkbox" name="question3" value="other">You are the Hero that never fails.<br>
+        </div>
+        <button type="submit" class="btn btn-danger">Submit</button>
+      </form>
+      <div id="result">
+        <div class="card border-danger mb-3" id="final-card" style="max-width: 18rem;">
+          <div class="card-header">Your Fate</div>
+          <div class="card-body text-danger">
+            <h5 class="card-title">Whether you like it or Not...</h5>
+            <p class="card-text" id="answer"></p>
+          </div>
+        </div>
+      </div>
+      <button type="button" class="btn btn-info" id="reset">Reset</button>
+
+
+      <!-- </div> -->
+
+    </body>
+    </html>
